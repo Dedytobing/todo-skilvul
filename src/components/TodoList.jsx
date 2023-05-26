@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import store from "../redux/Store";
-import { toggleTodo, deleteTodo, updateTodo } from "../redux/actions";
+import { toggleTodo, deleteTodo, updateTodo } from "../redux/Actions";
 
 function TodoList() {
   const [toggleEditTodo, SetToggleEditTodo] = useState(false); // Show or hide Edit Inputs
