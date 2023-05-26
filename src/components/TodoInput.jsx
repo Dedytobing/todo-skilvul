@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import store from "../redux/Store";
-import { addTodo } from "../redux/actions";
+import { addTodo } from "../redux/Actions";
 
 function TodoInput() {
   const input = useRef();

@@ -103,7 +103,13 @@ function TodoList() {
             >
               <div className="listData flex items-center">
                 <div>{index + 1}</div>
-                <div className={!item.completed ? "toBeDoneItems ml-4" : "doneItems ml-4 line-through "}>
+                <div
+                  className={
+                    !item.completed
+                      ? "toBeDoneItems ml-4"
+                      : "doneItems ml-4 line-through "
+                  }
+                >
                   {item.title}
                 </div>
               </div>
@@ -111,7 +117,7 @@ function TodoList() {
                 <div className="listStatus ">
                   {item.completed ? "✅" : "❓"}
                 </div>
-                <div className="ml-8" >
+                <div className="ml-8">
                   <button
                     onClick={() => {
                       handleToggleTodo(item.id);
